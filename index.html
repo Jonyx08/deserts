@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Postres</title>
+</head>
+<body>  
+
+<div class="containSearch">
+  <form id="form" role="search">
+    <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+    <button type="submit">Busqueda</button>
+  </form>
+  <h1>Agrega tu postre favorito</h1>
+</div>
+
+<div class="parent">
+
+  <div class="item" data-name="Waffle with Berries">
+    <img src="assets/images/image-waffle-desktop.jpg" alt="waffle">
+    <button>Add to Cart</button>
+    <h3>Waffle with Berries</h3>
+    <h4>Waffle</h4>
+    <h3>$6.50</h3>
+  </div>
+
+  <div class="item" data-name="Macaron Mix of Five">
+    <img src="assets/images/image-macaron-desktop.jpg" alt="macaron">
+    <button>Add to Cart</button>
+    <h3>Macaron Mix of Five</h3>
+    <h4>Macaron</h4>
+    <h3>$8.00</h3>
+  </div>
+
+  <div class="item" data-name="Lemon Meringue Pie">
+    <img src="assets/images/image-creme-brulee-desktop.jpg" alt="pie">
+    <button>Add to Cart</button>
+    <h3>Lemon Meringue Pie</h3>
+    <h4>Pie</h4>
+    <h3>$5.00</h3>
+  </div>
+
+  <div class="item" data-name="Pistachio Baklava">
+    <img src="assets/images/image-baklava-desktop.jpg" alt="baklava">
+    <button>Add to Cart</button>
+    <h3>Pistachio Baklava</h3>
+    <h4>Baklava</h4>
+    <h3>$4.00</h3>
+  </div>
+
+  <div class="item" data-name="Classic Tiramisu">
+    <img src="assets/images/image-tiramisu-desktop.jpg" alt="tiramisu">
+    <button>Add to Cart</button>
+    <h3>Classic Tiramisu</h3>
+    <h4>Tiramisu</h4>
+    <h3>$5.50</h3>
+  </div>
+
+  <div class="item" data-name="Classic Brownie">
+    <img src="assets/images/image-brownie-desktop.jpg" alt="brownie">
+    <button>Add to Cart</button>
+    <h3>Classic Brownie</h3>
+    <h4>Brownie</h4>
+    <h3>$5.50</h3>
+  </div>
+
+</div>
+
+<div id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: $<span id="total">0.00</span></p>
+
+  <button>Success</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
