@@ -1,0 +1,126 @@
+
+body {
+  font-family: 'MiFuente';
+  background: black;
+  margin: 0;
+  margin-right: 400px;
+  padding: 20px;
+}
+
+.containSearch h1 {
+  color: #eee!important;
+  margin-bottom: 100px;
+}
+
+.containSearch {
+  text-align: center;
+}
+
+form {
+  align-self: center;
+  background-color: #c1c3d9;
+  width: 1100px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background-color: #c1c3d9;
+  border-radius: 10px;
+}
+
+.parent img {
+  border-radius: 10px;
+  height: 250px;
+}
+
+.item {
+  background-color: #999;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.parent button {
+  background-color: #2c2e35;
+  color: white;
+  padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 2s ease-in-out, width 0.5s linear, height 0.5s linear, aling-self 2s ease-in-out;
+  background-image: url(assets/images/icon-add-to-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+}
+
+.parent button:hover {
+  background-color: #9176ff;
+  background-image: none;
+  width: 150px;
+  height: 40px;
+  align-self: center;
+}
+
+#cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 600px;
+  background: #cfcece;
+  padding: 50px;
+  overflow-y: auto;
+  border-radius: 30px;
+  font-size: 22px;
+}
+
+#cart h2 {
+  margin-top: 0 auto;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color:#3401ff;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#total {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'MiFuente';
+  src: url('assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
